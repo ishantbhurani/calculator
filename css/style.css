@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 2rem;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #555;
+  text-shadow: 6px 4px 6px #cbced1, -6px -4px 6px #fefefe;
+  margin-bottom: 1rem;
+}
+
+main {
+  padding: 40px;
+  border-radius: 20px;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px #fff;
+}
+
+.result {
+  background: #ecf0f3;
+  padding: 20px;
+  height: 50px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #777;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding-top: 20px;
+}
+
+.btn {
+  color: #777;
+  padding: 18px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  border: none;
+  background: #ecf0f3;
+  box-shadow: 4px 4px 6px #cbced1, -4px -4px 6px #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #555;
+  box-shadow: 1px 1px 6px #fff, -1px -1px 6px #cbced1;
+}
+
+.btn-equals {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
