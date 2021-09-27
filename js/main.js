@@ -12,7 +12,7 @@ buttons.forEach((button) => {
 });
 
 const digitClicked = (digit) => {
-  resultField.textContent += digit;
+  if (resultField.textContent.length < 18) resultField.textContent += digit;
 };
 
 const operatorClicked = (operator) => {
